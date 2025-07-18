@@ -10,7 +10,7 @@ const router = createBrowserRouter([
         Component: App,
         children: [
             {
-                index: true,
+                index: true, //by default in the homepage tasks component will be visible
                 Component: Tasks
             },
             {
