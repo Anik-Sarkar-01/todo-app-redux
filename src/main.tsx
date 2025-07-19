@@ -9,7 +9,7 @@ import { store } from './redux/store.ts'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <ThemeProvider>
+    <ThemeProvider defaultTheme='dark' storageKey="vite-ui-theme">
       <Provider store={store}>
         <RouterProvider router={router}></RouterProvider>
       </Provider>
